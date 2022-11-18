@@ -1,7 +1,7 @@
-import React from 'react'
 import { Box, Menu, MenuItem, MenuButton, MenuList } from '@chakra-ui/react'
+import React from 'react'
 
-const children = () => {
+const address = () => {
   return (
     <Box
         w="7rem"
@@ -14,18 +14,15 @@ const children = () => {
     >
         <Menu>
             <MenuButton color="white">
-                Children
+                Address
             </MenuButton>
             
             <MenuList>
-                <MenuItem>Seyi</MenuItem>
-                <MenuItem>Bisi</MenuItem>
-                <MenuItem>Gbenga</MenuItem>
-                <MenuItem>Damilola</MenuItem>
+                <MenuItem>6, Omololu by Ayilara street, Surulere, Lagos.</MenuItem>
             </MenuList>
         </Menu>
     </Box>
   )
 }
 
-export default children
+export default address

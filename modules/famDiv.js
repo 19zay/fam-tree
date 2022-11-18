@@ -2,6 +2,9 @@ import { Box, Card, CardBody, Container, Heading, HStack, Image, Stack } from '@
 import React from 'react'
 import Parents from "../components/parents"
 import Children from '../components/children'
+import Address from '../components/address'
+import Numbers from '../components/numbers'
+import DateOfBirth from '../components/DOB'
 
 const famDiv = () => {
   return (
@@ -44,6 +47,19 @@ const famDiv = () => {
                 >
                     <Parents/>
                     <Children/>
+
+                </HStack>
+
+                <HStack
+                    display="flex"
+                    alignItems="center"
+                    justifyContent="center"
+                    mt="1rem"
+                >
+                    <Address/>
+                    <Numbers/>
+                    <DateOfBirth/>
+                
                 </HStack>
 
             </CardBody>
