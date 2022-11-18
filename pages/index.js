@@ -13,8 +13,8 @@ export default function Home() {
       {/* Toggle DarkMode */}
       <Button 
         float="right"
-        mt="2rem"
-        mr="2rem"
+        mt="1rem"
+        mr="1rem"
         onClick={toggleColorMode}
         >
         {colorMode === 'light' ? <MoonIcon/> : <SunIcon/> }
