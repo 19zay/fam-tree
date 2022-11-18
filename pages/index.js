@@ -17,7 +17,7 @@ export default function Home() {
         mr="1rem"
         onClick={toggleColorMode}
         >
-        {colorMode === 'light' ? <MoonIcon/> : <SunIcon/> }
+        {colorMode === 'light' ? <SunIcon/> : <MoonIcon/> }
       </Button>
 
       {/* Main Div */}
