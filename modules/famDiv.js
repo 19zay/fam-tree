@@ -1,5 +1,7 @@
-import { Box, Card, CardBody, Container, Heading, Image, Stack } from '@chakra-ui/react'
+import { Box, Card, CardBody, Container, Heading, HStack, Image, Stack } from '@chakra-ui/react'
 import React from 'react'
+import Parents from "../components/parents"
+import Children from '../components/children'
 
 const famDiv = () => {
   return (
@@ -28,14 +30,21 @@ const famDiv = () => {
                 >
                     <Heading
                         color="#006093"
+                        mt="2rem"
                     >
                         Oyeniyi Household
                     </Heading>
                 </Stack>
 
-                <Stack>
-                    
-                </Stack>
+                <HStack
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    mt="1rem"
+                >
+                    <Parents/>
+                    <Children/>
+                </HStack>
 
             </CardBody>
         </Card>
