@@ -13,7 +13,7 @@ const parents = () => {
         alignItems="center"
     >
         <Menu>
-            <MenuButton color="white">
+            <MenuButton color="white" fontSize="0.8rem" fontWeight="600">
                 Parents
             </MenuButton>
             
