@@ -14,7 +14,7 @@ const DOB = () => {
     >
         <Menu>
             <MenuButton color="white">
-                Date of Birth
+                Date of Births
             </MenuButton>
             
             <MenuList>
