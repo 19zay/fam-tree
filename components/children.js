@@ -6,7 +6,7 @@ const children = () => {
     <Box
         w="7rem"
         h="2.6rem"
-        bg="#395B64"
+        bg="#3882a3"
         borderRadius="full"
         display="flex"
         justifyContent="center"

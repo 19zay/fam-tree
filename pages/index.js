@@ -1,6 +1,6 @@
 import { Box, Switch, useColorMode, Button } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons"
-import FamDiv from "../modules/famDiv"
+import  FamDiv  from '../modules/famDiv'
 
 
 export default function Home() {
