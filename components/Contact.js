@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box, Menu, MenuItem, MenuButton, MenuList } from '@chakra-ui/react'
+import { Box, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
 import { useColorModeValue } from '@chakra-ui/react'
 
-const Children = () => {
+const Contact = () => {
     const divColor = useColorModeValue("#51b8e5" , "#3882A3")
   return (
     <Box
@@ -16,22 +16,25 @@ const Children = () => {
     >
         <Menu>
             <MenuButton 
-                // color="white" 
+                // color="white"  
                 fontSize="0.8rem" 
                 fontWeight="600"
             >
-                Children
+                Numbers
             </MenuButton>
             
             <MenuList>
-                <MenuItem>Seyi</MenuItem>
-                <MenuItem>Bisi</MenuItem>
-                <MenuItem>Gbenga</MenuItem>
-                <MenuItem>Damilola</MenuItem>
+                <MenuItem>Adebayo: 0123456789</MenuItem>
+                <MenuItem>Esther: 012345678</MenuItem>
+                <MenuItem>-</MenuItem>
+                <MenuItem>Seyi: 0123456789</MenuItem>
+                <MenuItem>Bisi: 0123456789</MenuItem>
+                <MenuItem>Gbenga: 0123456789</MenuItem>
+                <MenuItem>Damilola: 0123456789</MenuItem>
             </MenuList>
         </Menu>
     </Box>
   )
 }
 
-export default Children
+export default Contact
