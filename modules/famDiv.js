@@ -20,7 +20,7 @@ const famDiv = () => {
         >
             <Card 
                 w={[350, 450, 550]}
-                h={[600, 600, 630]}
+                h={[500, 600, 630]}
                 bg="#B9E2F4"
                 borderRadius="1rem"
                 mt="0.9rem"
