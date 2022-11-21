@@ -1,6 +1,5 @@
 import React from 'react'
 import { Box, Menu, MenuItem, MenuButton, MenuList } from '@chakra-ui/react'
-import React from 'react'
 import { useColorModeValue } from '@chakra-ui/react'
 
 const Addresss = () => {
