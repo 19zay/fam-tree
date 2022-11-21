@@ -4,7 +4,6 @@ import { useColorModeValue } from '@chakra-ui/react'
 
 const children = () => {
     const divColor = useColorModeValue("#51b8e5" , "#3882A3")
-    
   return (
     <Box
         w="7rem"

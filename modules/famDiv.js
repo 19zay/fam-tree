@@ -1,9 +1,9 @@
 import { Box, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, Heading, HStack, Image, Stack } from '@chakra-ui/react'
 import React from 'react'
-import Parents from "../components/parents"
-import Children from '../components/children'
+import Parent from '../components/Parent'
+import Children from "../components/Children"
 import Address from '../components/Addresss'
-import Numbers from '../components/numbers'
+import Numbers from '../components/Numbers'
 import DateOfBirth from '../components/DOB'
 import { BsTwitter } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
@@ -56,7 +56,7 @@ const famDiv = () => {
                         alignItems="center"
                         mt="0.4rem"
                     >
-                        <Parents/>
+                        <Parent/>
                         <Children/>
 
                     </HStack>
