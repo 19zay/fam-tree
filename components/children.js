@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Menu, MenuItem, MenuButton, MenuList } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
 
-const children = () => {
+const Children = () => {
     const divColor = useColorModeValue("#51b8e5" , "#3882A3")
   return (
     <Box
@@ -34,4 +34,4 @@ const children = () => {
   )
 }
 
-export default children
+export default Children
