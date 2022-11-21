@@ -1,8 +1,8 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
+import { Link, Box, Flex, Text, Button, Stack, Heading } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/react";
 import { SunIcon, MoonIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-
+import { GiFamilyHouse } from "react-icons/gi"
 
 const navbar = (props) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -11,7 +11,11 @@ const navbar = (props) => {
 
   return (
     <NavBarContainer {...props}>
-      
+      <Flex p={[1, 2, 3]}>
+         <GiFamilyHouse fontSize="1.4rem" color="#4ac1f5"/>
+         <Text ml="0.3rem" mt="-0.5rem" fontSize="1.5rem" fontWeight="600">famTree</Text>
+      </Flex>
+
       <MenuToggle toggle={toggle} isOpen={isOpen} />
       <MenuLinks isOpen={isOpen} />
     </NavBarContainer>
@@ -52,7 +56,10 @@ const MenuLinks = ({ isOpen }) => {
         align="flex-start"
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
-        pt={[4, 4, 0, 0]}
+        // pt={[4, 4, 0, 0]}
+        display="flex"
+        justifyContent="flex-end"
+        alignItems="flex-end"
       >
         {/* <MenuItem to="/">Home</MenuItem>
         <MenuItem to="/how">How It works </MenuItem>
@@ -87,6 +94,9 @@ const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
       as="nav"
+      justify="space-between"
+      wrap="wrap"
+      w="100%"
       p={4}
       {...props}
     >
