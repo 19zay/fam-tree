@@ -13,7 +13,7 @@ const navbar = (props) => {
     <NavBarContainer {...props}>
       <Flex p={[1, 2, 3]}>
          <GiFamilyHouse fontSize="1.4rem" color="#4ac1f5"/>
-         <Text ml="0.3rem" mt="-0.25rem" fontSize="1.3rem" fontWeight="600">famTree</Text>
+         <Text ml="0.3rem"  fontSize="1.3rem" fontWeight="600">famTree</Text>
       </Flex>
 
       <MenuToggle toggle={toggle} isOpen={isOpen} />
