@@ -88,6 +88,7 @@ const NavBarContainer = ({ children, ...props }) => {
     <Flex
       as="nav"
       p={4}
+      position="fixed"
       {...props}
     >
       {children}
