@@ -4,6 +4,7 @@ import { useColorModeValue } from '@chakra-ui/react'
 
 const Parent = () => {
     const divColor = useColorModeValue("#51b8e5" , "#3882A3")
+    const textColr = useColorModeValue("#3f3f3f" , "white")
   return (
     <Box
         w="7rem"
@@ -16,7 +17,7 @@ const Parent = () => {
     >
         <Menu>
             <MenuButton 
-                // color="white" 
+                color={textColr}
                 fontSize="0.8rem" 
                 fontWeight="600"
             >

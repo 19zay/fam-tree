@@ -10,8 +10,9 @@ import { BsInstagram } from 'react-icons/bs'
 import { useColorModeValue } from '@chakra-ui/react'
 
 const famDiv = () => {
-
     const headerColor = useColorModeValue("#035E95" , "white") 
+    const textColr = useColorModeValue("#595959" , "white")
+
   return (
     <Container 
       maxW="container.xl" 
@@ -83,11 +84,11 @@ const famDiv = () => {
                     justifyContent="center"
                 >
                     <Stack mr="0.5rem">
-                    <BsTwitter fontSize="1.5rem" />
+                    <BsTwitter fontSize="1.5rem" color={textColr}/>
                     </Stack>
 
                     <Stack>
-                        <BsInstagram fontSize="1.5rem" />
+                        <BsInstagram fontSize="1.5rem" color={textColr}/>
                     </Stack>
 
                 </CardFooter>
