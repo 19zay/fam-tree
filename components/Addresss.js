@@ -30,3 +30,5 @@ const Addresss = () => {
     </Box>
   )
 }
+
+export default Addresss
