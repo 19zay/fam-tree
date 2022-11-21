@@ -2,7 +2,7 @@ import { Box, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, 
 import React from 'react'
 import Parents from "../components/parents"
 import Children from '../components/children'
-import Address from '../components/address'
+import Address from '../components/Addresss'
 import Numbers from '../components/numbers'
 import DateOfBirth from '../components/DOB'
 import { BsTwitter } from 'react-icons/bs'
