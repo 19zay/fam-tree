@@ -49,7 +49,7 @@ const MenuLinks = ({ isOpen }) => {
     >
       <Stack
         spacing={8}
-        align="center"
+        align="flex-start"
         justify={["center", "space-between", "flex-end", "flex-end"]}
         direction={["column", "row", "row", "row"]}
         pt={[4, 4, 0, 0]}
@@ -72,7 +72,6 @@ const MenuLinks = ({ isOpen }) => {
           </Button>
         </MenuItem> */}
             <Button 
-                float="right"
                 mt="1rem"
                 mr="1rem"
                 onClick={toggleColorMode}
@@ -88,7 +87,7 @@ const NavBarContainer = ({ children, ...props }) => {
   return (
     <Flex
       as="nav"
-      p={8}
+      p={4}
       {...props}
     >
       {children}

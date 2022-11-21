@@ -7,8 +7,11 @@ import Numbers from '../components/numbers'
 import DateOfBirth from '../components/DOB'
 import { BsTwitter } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
+import { useColorModeValue } from '@chakra-ui/react'
 
 const famDiv = () => {
+
+    const headerColor = useColorModeValue("#035E95" , "white") 
   return (
     <Container 
       maxW="container.xl" 
@@ -21,7 +24,7 @@ const famDiv = () => {
             <Card 
                 w={[350, 450, 550]}
                 h={[500, 600, 630]}
-                bg="#B9E2F4"
+                // bg="#B9E2F4"
                 borderRadius="1rem"
                 mt="0.9rem"
                 boxShadow= "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
@@ -39,7 +42,7 @@ const famDiv = () => {
                         justifyContent="center"
                     >
                         <Heading
-                            color="#006093"
+                            color={headerColor}
                             mt="1rem"
                             size='lg'
                         >
@@ -80,11 +83,11 @@ const famDiv = () => {
                     justifyContent="center"
                 >
                     <Stack mr="0.5rem">
-                    <BsTwitter fontSize="1.5rem" color='#267A62'/>
+                    <BsTwitter fontSize="1.5rem" />
                     </Stack>
 
                     <Stack>
-                        <BsInstagram fontSize="1.5rem" color='#267A62'/>
+                        <BsInstagram fontSize="1.5rem" />
                     </Stack>
 
                 </CardFooter>
