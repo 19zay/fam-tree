@@ -172,18 +172,20 @@ const grandparents = () => {
           </Card>
       </Flex>
 
-        <Button
-            w="11rem"
-            h="4rem"
-            bg="#4462B5"
-            mb="3rem"
-            mt="1rem"
-            color={textColor}
-            display="inline"
-            font
-        >
-            Our Grandmothers
-        </Button>
+        <Link href="/grandMothers">
+            <Button
+                w="11rem"
+                h="4rem"
+                bg="#4462B5"
+                mb="3rem"
+                mt="1rem"
+                color={textColor}
+                display="inline"
+                font
+            >
+                Our Grandmothers
+            </Button>
+        </Link>
   </Container>
   )
 }
