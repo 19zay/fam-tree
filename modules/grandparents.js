@@ -48,7 +48,7 @@ const grandparents = () => {
 
                         <Text
                             color={headerColor}
-                            fontSize="1.2rem"
+                            fontSize={["0.8rem", "1.2rem", "1.2rem"]}
                             fontWeight="600"
                             textAlign="center"
                             letterSpacing="-0.08rem"
@@ -182,7 +182,7 @@ const grandparents = () => {
             display="inline"
             font
         >
-            Our Grandmothers <ChevronRightIcon/>
+            Our Grandmothers
         </Button>
   </Container>
   )
