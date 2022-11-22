@@ -1,6 +1,8 @@
-import { Box, Text, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, Heading, HStack, Image, Stack, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
+import { Box, Text, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, Heading, HStack, Image, Stack, Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react'
 import React from 'react'
 import { useColorModeValue } from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Link from 'next/link'
 
 const grandparents = () => {
     const headerColor = useColorModeValue("#035E95" , "white") 
@@ -14,11 +16,11 @@ const grandparents = () => {
 
     >
         <Flex
-            
+           py={[3, 7, 10]} 
         >
             <Card 
-                w={[350, 450, 550]}
-                h={[550, 650, 700]}
+                w={[300, 450, 550]}
+                h={[500, 650, 700]}
                 // bg="#B9E2F4"
                 borderRadius="1rem"
                 mt="0.9rem"
@@ -49,8 +51,10 @@ const grandparents = () => {
                             fontSize="1.2rem"
                             fontWeight="600"
                             textAlign="center"
+                            letterSpacing="-0.08rem"
+                            lineHeight="1.1rem"
                         >
-                            Meet the first people from our lineage..
+                            meet the first people from our lineage..
                         </Text>
 
                     </CardHeader>
@@ -63,43 +67,48 @@ const grandparents = () => {
                     >
                       {/* <Parent/>
                       <Offspring/> */}
-                      <Box
-                        w="8rem"
-                        h="3rem"
-                        borderRadius="full"
-                        bgColor={textColr}
-                        display="flex"
-                        justifyContent="center"
-                        alignItems="center"
-                      >
-                        <Text
-                            fontWeight="500"
-                            color={textColor}
-                            textAlign="center"
-                            fontSize="0.8rem"
-                        >
-                            The Oniludes
-                        </Text>
-                      </Box>
+                        <Link href='/bioPage'>
+                            <Box
+                                w={["7rem", "8rem", "8rem" ]}
+                                h="3rem"
+                                borderRadius="full"
+                                bgColor={textColr}
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Text
+                                    fontWeight="700"
+                                    color={textColor}
+                                    textAlign="center"
+                                    fontSize="0.8rem"
+                                >
+                                    The Johns                               
+                                
+                                </Text>
+                            </Box>
+                        </Link>
 
-                      <Box
-                        w="8rem"
-                        h="3rem"
-                        borderRadius="full"
-                        bgColor={textColr}
-                        display="flex"
-                        justifyContent="center"
-                        alignItems="center"
-                      >
-                         <Text
-                            fontWeight="500"
-                            color={textColor}
-                            textAlign="center"
-                            fontSize="0.8rem"
-                        >
-                            The Lorems
-                        </Text>
-                      </Box>
+                        <Link href="/bioPage">
+                            <Box
+                                w={["7rem", "8rem", "8rem" ]}
+                                h="3rem"
+                                borderRadius="full"
+                                bgColor={textColr}
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Text
+                                    fontWeight="700"
+                                    color={textColor}
+                                    textAlign="center"
+                                    fontSize="0.8rem"
+                                >
+                                    The Does
+                                </Text>
+                            </Box>
+                        </Link>
 
                     </HStack>
 
@@ -112,68 +121,69 @@ const grandparents = () => {
                       {/* <Address/>
                       <Numbers/>
                       <DateOfBirth/> */}
+                        <Link href="/bioPage">
+                            <Box
+                                w={["7rem", "8rem", "8rem" ]}
+                                h="3rem"
+                                borderRadius="full"
+                                bgColor={textColr}
+                                mr="1.6rem"
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Text
+                                    fontWeight="700"
+                                    color={textColor}
+                                    textAlign="center"
+                                    fontSize="0.8rem"
+                                >
+                                    The Does
+                                </Text>
+                            </Box>
+                        </Link>
 
-                      <Box
-                        w="8rem"
-                        h="3rem"
-                        borderRadius="full"
-                        bgColor={textColr}
-                        mr="1.6rem"
-                        display="flex"
-                        justifyContent="center"
-                        alignItems="center"
-                      >
-                         <Text
-                            fontWeight="500"
-                            color={textColor}
-                            textAlign="center"
-                            fontSize="0.8rem"
-                        >
-                            The Ipsums
-                        </Text>
-                      </Box>
-
-                      <Box
-                        w="8rem"
-                        h="3rem"
-                        borderRadius="full"
-                        bgColor={textColr}
-                        display="flex"
-                        justifyContent="center"
-                        alignItems="center"
-                      >
-                         <Text
-                            fontWeight="500"
-                            color={textColor}
-                            textAlign="center"
-                            fontSize="0.8rem"
-                        >
-                            The Lorems
-                        </Text>
-                      </Box>
+                        <Link href="/bioPage">
+                            <Box
+                                w={["7rem", "8rem", "8rem" ]}
+                                h="3rem"
+                                borderRadius="full"
+                                bgColor={textColr}
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Text
+                                    fontWeight="700"
+                                    color={textColor}
+                                    textAlign="center"
+                                    fontSize="0.8rem"
+                                >
+                                    The Johns
+                                </Text>
+                            </Box>
+                        </Link>
                   
                     </HStack>
 
                 </CardBody>
 
                 <Divider/>
-
-                {/* <CardFooter
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="center"
-                >
-                  <Stack mr="0.5rem">
-                  <BsTwitter fontSize="1.5rem" color={textColr}/>
-                  </Stack>
-
-                  <Stack>
-                      <BsInstagram fontSize="1.5rem" color={textColr}/>
-                  </Stack>
-
-                </CardFooter> */}
           </Card>
       </Flex>
+
+        <Button
+            w="11rem"
+            h="4rem"
+            bg="#4462B5"
+            mb="3rem"
+            mt="1rem"
+            color={textColor}
+            display="inline"
+            font
+        >
+            Our Grandmothers <ChevronRightIcon/>
+        </Button>
   </Container>
   )
 }

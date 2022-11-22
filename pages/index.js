@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import  FamDiv  from '../modules/famDiv'
 import Navbar from "../modules/navbar"
-import GpDiv from "../modules/grandparents";
+import LandingPage from "../modules/grandparents";
 
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
     <Box >
       <Navbar/>
       {/* <FamDiv/> */}
-      <GpDiv/>
+      <LandingPage/>
     </Box>
   )
 }
