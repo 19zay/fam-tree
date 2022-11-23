@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Flex, Card, CardBody, CardHeader, Heading,Text, Button, Link } from '@chakra-ui/react'
+import { Container, Flex, Card, CardBody, CardHeader, Heading,Text, Button, Link, Box } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/react'
 import { ChevronLeftIcon } from '@chakra-ui/icons'
 
@@ -39,14 +39,16 @@ const gpBio = () => {
                         </Heading>
                     </CardHeader>
 
-                    <Text
-                        display="flex"
-                        alignItems="center"
-                        justifyContent="center"
-                        mt="2rem"
+
+                    <Box
+                        mt="5rem"
                     >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie est condimentum felis vulputate, sed dignissim massa porta. 
-                    </Text>
+                        <Text
+                            textAlign="center"
+                        >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In molestie est condimentum felis vulputate, sed dignissim massa porta. 
+                        </Text>
+                    </Box>
                 </CardBody>
             </Card>
         </Flex>
@@ -60,7 +62,6 @@ const gpBio = () => {
                 mt="1rem"
                 color={textColor}
                 display="inline"
-                font
             >
                 <ChevronLeftIcon fontSize="2rem"/>
             </Button>

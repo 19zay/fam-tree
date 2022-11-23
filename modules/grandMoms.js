@@ -1,4 +1,4 @@
-import { Box, Text, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, Heading, HStack, Image, Stack, Menu, MenuButton, MenuItem, MenuList, Button } from '@chakra-ui/react'
+import { Box, Text, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, Heading, HStack, Image, Stack, Menu, MenuButton, MenuItem, MenuList, Button, Select } from '@chakra-ui/react'
 import React from 'react'
 import { useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -7,8 +7,9 @@ import Link from 'next/link'
 const grandMoms = () => {
     
     const headerColor = useColorModeValue("#6C4A6D" , "white") 
-    const textColr = useColorModeValue("#4462B5" , "#424D9F")
+    const textColr = useColorModeValue("white" , "white")
     const textColor = useColorModeValue("#ECD9D2" , "white")
+    const divColor = useColorModeValue("#9CA3BD" , "#1A202C")
         
   return (
     <Container 
@@ -43,11 +44,12 @@ const grandMoms = () => {
                         <Heading
                             color={headerColor}
                             size='lg'
+                            textAlign="center"
                         >
-                            Our Grandmoms
+                            Our Beloved Grandmoms,
                         </Heading>
 
-                        {/* <Text
+                        <Text
                             color={headerColor}
                             fontSize={["0.8rem", "1.2rem", "1.2rem"]}
                             fontWeight="600"
@@ -55,13 +57,163 @@ const grandMoms = () => {
                             letterSpacing="-0.08rem"
                             lineHeight="1.1rem"
                         >
-                            meet the first people from our lineage..
-                        </Text> */}
+                           and their kids..
+                        </Text>
 
                     </CardHeader>
 
-                  
+                        <HStack
+                            display="flex"
+                            justifyContent="center"
+                            alignItems="center"
+                            mt="0.4rem"
+                        >
+                            <Box
+                                w="7rem"
+                                h="2.6rem"
+                                bg={divColor}
+                                borderRadius="full"
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Menu>
+                                    <MenuButton 
+                                        color={textColr}
+                                        fontSize="0.8rem" 
+                                        fontWeight="600"
+                                    >
+                                        Mrs Onilude
+                                    </MenuButton>
+                                    
+                                    <MenuList>
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Lorem</MenuItem>
+                                        </Link>
+                                    
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
 
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+                                    </MenuList>
+                                </Menu>  
+                            </Box>
+
+                            <Box
+                                w="7rem"
+                                h="2.6rem"
+                                bg={divColor}
+                                borderRadius="full"
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Menu>
+                                    <MenuButton 
+                                        color={textColr}
+                                        fontSize="0.8rem" 
+                                        fontWeight="600"
+                                    >
+                                        Mrs Onilude
+                                    </MenuButton>
+                                    
+                                    <MenuList>
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Lorem</MenuItem>
+                                        </Link>
+                                    
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+                                    </MenuList>
+                                </Menu>  
+                            </Box>
+                        </HStack>
+                       
+                       <HStack
+                            display="flex"
+                            alignItems="center"
+                            justifyContent="center"
+                            mt="1rem"                           
+                        >
+                            <Box
+                                w="7rem"
+                                h="2.6rem"
+                                bg={divColor}
+                                borderRadius="full"
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                                mr="3rem"
+                            >
+                                <Menu>
+                                    <MenuButton 
+                                        color={textColr}
+                                        fontSize="0.8rem" 
+                                        fontWeight="600"
+                                    >
+                                        Mrs Onilude
+                                    </MenuButton>
+                                    
+                                    <MenuList>
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Lorem</MenuItem>
+                                        </Link>
+                                    
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+                                    </MenuList>
+                                </Menu>  
+                            </Box>
+
+                            <Box
+                                w="7rem"
+                                h="2.6rem"
+                                bg={divColor}
+                                borderRadius="full"
+                                display="flex"
+                                justifyContent="center"
+                                alignItems="center"
+                            >
+                                <Menu>
+                                    <MenuButton 
+                                        color={textColr}
+                                        fontSize="0.8rem" 
+                                        fontWeight="600"
+                                    >
+                                        Mrs Onilude
+                                    </MenuButton>
+                                    
+                                    <MenuList>
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Lorem</MenuItem>
+                                        </Link>
+                                    
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+
+                                        <Link href="/famPage"> 
+                                            <MenuItem>Ipsum</MenuItem>
+                                        </Link>
+                                    </MenuList>
+                                </Menu>  
+                            </Box>
+                       </HStack>
+
+                  
                 </CardBody>
 
                 <Divider/>

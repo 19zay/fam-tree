@@ -181,7 +181,6 @@ const grandparents = () => {
                 mt="1rem"
                 color={textColor}
                 display="inline"
-                font
             >
                 Our Grandmothers
             </Button>
