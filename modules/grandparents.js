@@ -7,7 +7,7 @@ import Link from 'next/link'
 const grandparents = () => {
     const headerColor = useColorModeValue("#035E95" , "white") 
     const textColr = useColorModeValue("#4462B5" , "#424D9F")
-    const textColor = useColorModeValue("#ECD9D2" , "white")
+    const textColor = useColorModeValue("white" , "white")
         
   return (
     <Container 
@@ -20,10 +20,10 @@ const grandparents = () => {
         >
             <Card 
                 w={[300, 450, 550]}
-                h={[500, 650, 700]}
+                h={[440, 640, 650]}
                 // bg="#B9E2F4"
                 borderRadius="1rem"
-                mt="0.9rem"
+                mt={["0.6rem", "-2rem", "-3rem"]}
                 boxShadow= "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
             >
                 <CardBody>
@@ -48,7 +48,7 @@ const grandparents = () => {
 
                         <Text
                             color={headerColor}
-                            fontSize={["0.8rem", "1.2rem", "1.2rem"]}
+                            fontSize={["0.8rem", "1rem", "1rem"]}
                             fontWeight="600"
                             textAlign="center"
                             letterSpacing="-0.08rem"
@@ -69,13 +69,14 @@ const grandparents = () => {
                       <Offspring/> */}
                         <Link href='/bioPage'>
                             <Box
-                                w={["7rem", "8rem", "8rem" ]}
-                                h="3rem"
-                                borderRadius="full"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bgColor={textColr}
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
+                                mr="0.5rem"
                             >
                                 <Text
                                     fontWeight="700"
@@ -83,7 +84,7 @@ const grandparents = () => {
                                     textAlign="center"
                                     fontSize="0.8rem"
                                 >
-                                    The Johns                               
+                                    The Oniludes                               
                                 
                                 </Text>
                             </Box>
@@ -91,9 +92,9 @@ const grandparents = () => {
 
                         <Link href="/bioPage">
                             <Box
-                                w={["7rem", "8rem", "8rem" ]}
-                                h="3rem"
-                                borderRadius="full"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bgColor={textColr}
                                 display="flex"
                                 justifyContent="center"
@@ -105,7 +106,7 @@ const grandparents = () => {
                                     textAlign="center"
                                     fontSize="0.8rem"
                                 >
-                                    The Does
+                                    The Oyeniyis
                                 </Text>
                             </Box>
                         </Link>
@@ -123,11 +124,11 @@ const grandparents = () => {
                       <DateOfBirth/> */}
                         <Link href="/bioPage">
                             <Box
-                                w={["7rem", "8rem", "8rem" ]}
-                                h="3rem"
-                                borderRadius="full"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bgColor={textColr}
-                                mr="1.6rem"
+                                mr="2rem"
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
@@ -138,16 +139,16 @@ const grandparents = () => {
                                     textAlign="center"
                                     fontSize="0.8rem"
                                 >
-                                    The Does
+                                    The Onjokos
                                 </Text>
                             </Box>
                         </Link>
 
                         <Link href="/bioPage">
                             <Box
-                                w={["7rem", "8rem", "8rem" ]}
-                                h="3rem"
-                                borderRadius="full"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bgColor={textColr}
                                 display="flex"
                                 justifyContent="center"
@@ -159,7 +160,7 @@ const grandparents = () => {
                                     textAlign="center"
                                     fontSize="0.8rem"
                                 >
-                                    The Johns
+                                    The Baruwa
                                 </Text>
                             </Box>
                         </Link>

@@ -1,7 +1,7 @@
 import { Box, Text, Card, CardBody, CardFooter, CardHeader, Container, Divider, Flex, Heading, HStack, Image, Stack, Menu, MenuButton, MenuItem, MenuList, Button, Select } from '@chakra-ui/react'
 import React from 'react'
 import { useColorModeValue } from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronLeftIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 
 const grandMoms = () => {
@@ -9,7 +9,8 @@ const grandMoms = () => {
     const headerColor = useColorModeValue("#6C4A6D" , "white") 
     const textColr = useColorModeValue("white" , "white")
     const textColor = useColorModeValue("#ECD9D2" , "white")
-    const divColor = useColorModeValue("#9CA3BD" , "#1A202C")
+    const divColor = useColorModeValue("#6C4A6D" , "#42516a")
+    const buttonColor = useColorModeValue("#E46868", "#212937")
         
   return (
     <Container 
@@ -25,7 +26,7 @@ const grandMoms = () => {
                 h={[500, 650, 700]}
                 // bg="#B9E2F4"
                 borderRadius="1rem"
-                mt="0.9rem"
+                mt={["0.6rem", "-2rem", "-3rem"]}
                 boxShadow= "rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
             >
                 <CardBody>
@@ -51,7 +52,7 @@ const grandMoms = () => {
 
                         <Text
                             color={headerColor}
-                            fontSize={["0.8rem", "1.2rem", "1.2rem"]}
+                            fontSize={["0.8rem", "1rem", "1rem"]}
                             fontWeight="600"
                             textAlign="center"
                             letterSpacing="-0.08rem"
@@ -69,10 +70,10 @@ const grandMoms = () => {
                             mt="0.4rem"
                         >
                             <Box
-                                w="7rem"
-                                h="2.6rem"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bg={divColor}
-                                borderRadius="full"
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
@@ -88,25 +89,25 @@ const grandMoms = () => {
                                     
                                     <MenuList>
                                         <Link href="/famPage"> 
-                                            <MenuItem>Lorem</MenuItem>
+                                            <MenuItem>John</MenuItem>
                                         </Link>
                                     
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>James</MenuItem>
                                         </Link>
 
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Jody</MenuItem>
                                         </Link>
                                     </MenuList>
                                 </Menu>  
                             </Box>
 
                             <Box
-                                w="7rem"
-                                h="2.6rem"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bg={divColor}
-                                borderRadius="full"
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
@@ -117,20 +118,20 @@ const grandMoms = () => {
                                         fontSize="0.8rem" 
                                         fontWeight="600"
                                     >
-                                        Mrs Onilude
+                                        Mrs Oyeniyi
                                     </MenuButton>
                                     
                                     <MenuList>
                                         <Link href="/famPage"> 
-                                            <MenuItem>Lorem</MenuItem>
+                                            <MenuItem>Harry</MenuItem>
                                         </Link>
                                     
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Harriet</MenuItem>
                                         </Link>
 
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Hannah</MenuItem>
                                         </Link>
                                     </MenuList>
                                 </Menu>  
@@ -141,17 +142,17 @@ const grandMoms = () => {
                             display="flex"
                             alignItems="center"
                             justifyContent="center"
-                            mt="1rem"                           
+                            mt="0.7rem"                           
                         >
                             <Box
-                                w="7rem"
-                                h="2.6rem"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bg={divColor}
-                                borderRadius="full"
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
-                                mr="3rem"
+                                mr="2rem"
                             >
                                 <Menu>
                                     <MenuButton 
@@ -159,30 +160,30 @@ const grandMoms = () => {
                                         fontSize="0.8rem" 
                                         fontWeight="600"
                                     >
-                                        Mrs Onilude
+                                        Mrs Onjoko
                                     </MenuButton>
                                     
                                     <MenuList>
                                         <Link href="/famPage"> 
-                                            <MenuItem>Lorem</MenuItem>
+                                            <MenuItem>Tony</MenuItem>
                                         </Link>
                                     
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Tate</MenuItem>
                                         </Link>
 
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Theodore</MenuItem>
                                         </Link>
                                     </MenuList>
                                 </Menu>  
                             </Box>
 
                             <Box
-                                w="7rem"
-                                h="2.6rem"
+                                w={["6rem", "8rem", "8rem" ]}
+                                h={["2rem", "3rem", "3rem"]}
+                                borderRadius="0.7rem"
                                 bg={divColor}
-                                borderRadius="full"
                                 display="flex"
                                 justifyContent="center"
                                 alignItems="center"
@@ -193,20 +194,20 @@ const grandMoms = () => {
                                         fontSize="0.8rem" 
                                         fontWeight="600"
                                     >
-                                        Mrs Onilude
+                                        Mrs Baruwa
                                     </MenuButton>
                                     
                                     <MenuList>
                                         <Link href="/famPage"> 
-                                            <MenuItem>Lorem</MenuItem>
+                                            <MenuItem>Dora</MenuItem>
                                         </Link>
                                     
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Daisy</MenuItem>
                                         </Link>
 
                                         <Link href="/famPage"> 
-                                            <MenuItem>Ipsum</MenuItem>
+                                            <MenuItem>Dany</MenuItem>
                                         </Link>
                                     </MenuList>
                                 </Menu>  
@@ -220,6 +221,24 @@ const grandMoms = () => {
           </Card>
       </Flex>
 
+     
+            <Box
+                w={["5rem", "6rem", "7rem"]}
+                h={["3rem","3rem","3rem"]}
+                borderRadius="0.6rem"
+                bg="#4462B5"
+                mb="3rem"
+                mt="1rem"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                bgColor={buttonColor}
+            >
+                 <Link href="/">
+                <ChevronLeftIcon fontSize="2rem" color="white"/>
+                </Link>
+            </Box>
+      
   </Container>
   )
 }

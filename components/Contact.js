@@ -7,10 +7,10 @@ const Contact = () => {
     const textColr = useColorModeValue("#3f3f3f" , "white")
   return (
     <Box
-        w="7rem"
-        h="2.6rem"
+        w={["6rem", "8rem", "8rem" ]}
+        h={["2rem", "3rem", "3rem"]}
+        borderRadius="0.7rem"
         bg={divColor}
-        borderRadius="full"
         display="flex"
         justifyContent="center"
         alignItems="center"
